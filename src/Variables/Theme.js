@@ -19,7 +19,7 @@ export const theme = {
     fontWeights: {
       body: 400,
       heading: 700,
-      bold: 700,
+      bold: 900,
     },
     lineHeights: {
       body: 1.5,
