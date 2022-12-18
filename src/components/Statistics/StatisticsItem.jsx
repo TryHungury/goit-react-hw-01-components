@@ -2,8 +2,7 @@ import { Box } from "components/Box/Box"
 import styled from "styled-components"
 
 const StatLabel = styled.span`
-    color: ${p=>p.theme.colors.text};
-
+    color: ${p=>p.theme.colors.accent};
     font-family: ${p=>p.theme.fonts.monospace};
     font-size: ${p=>p.theme.fontSizes[3]}px;
     font-weight: ${p=>p.theme.fontWeights.body};
@@ -11,8 +10,9 @@ const StatLabel = styled.span`
 `
 
 const StatPercentage = styled.span`
-    color: ${p=>p.theme.colors.text};
-
+    color: ${p=>p.theme.colors.accent};
+    box-shadow: 0 0 ${p=>p.theme.space[3]}px ${p=>p.theme.colors.text};
+    border-radius: ${p=>p.theme.radii.normal};
     font-family: ${p=>p.theme.fonts.monospace};
     font-size: ${p=>p.theme.fontSizes[4]}px;
     font-weight: ${p=>p.theme.fontWeights.heading};

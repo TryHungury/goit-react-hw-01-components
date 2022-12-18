@@ -13,7 +13,7 @@ const Title = styled.h2`
 `
 
 export const Statistics = ({title}) => {
-    return <Box display="flex"  flexDirection="column" justifyContent="center" alignItems="center"  as={'section'} bg="background" border="normal" borderTopLeftRadius="normal" borderToprightRadius="normal">
+    return <Box display="flex"  flexDirection="column" justifyContent="center" alignItems="center" bg="background" border="normal" borderColor="accent" borderTopLeftRadius="normal" borderTopRightRadius="normal" mb="4" mt="4" as={'section'}>
         {title && <Title>{title}</Title>}
         <StatisticsList></StatisticsList>
     </Box>

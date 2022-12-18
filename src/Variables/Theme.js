@@ -5,6 +5,8 @@ export const theme = {
       borderColor: "#212121",
       background: "#ccc",
       backgroundSecondary: "#aaa",
+      online: "green",
+      offline: "red",
       text: "#212121",
     },
     space: [0,2,4,8,16,32,64,128],
@@ -31,7 +33,7 @@ export const theme = {
     },
     borders: {
       none: 'none',
-      normal: '1px solid',
+      normal: '2px solid',
     },
     radii: {
       name: '0',
