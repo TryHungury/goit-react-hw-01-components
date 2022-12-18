@@ -8,6 +8,7 @@ const LabelStyles = styled.span`
     font-size: ${p=>p.theme.fontSizes[3]}px;
     font-weight: ${p=>p.theme.fontWeights.body};
 `
+
 const QuantityStyles = styled.span`
     color: ${p=>p.theme.colors.text};
     font-family: ${p=>p.theme.fonts.body};
@@ -22,6 +23,7 @@ export const Stats = ({userStats, children}) => {
             <LabelStyles>{children}</LabelStyles>
             <QuantityStyles>{userStats}</QuantityStyles>
         </Box>
+
         case 'Views':
             return <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="100%" backgroundColor="background"  border="normal" borderColor="borderColor" p="15px">
             <LabelStyles>{children}</LabelStyles>
@@ -33,8 +35,9 @@ export const Stats = ({userStats, children}) => {
             <LabelStyles>{children}</LabelStyles>
             <QuantityStyles>{userStats}</QuantityStyles>
         </Box>
+
         default:
-            return <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="100%" backgroundColor="background"  border="normal" borderColor="borderColor" p="15px"  borderBottomLeftRadius="normal">
+            return <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="100%" backgroundColor="background"  border="normal" borderColor="borderColor" p="15px">
             <LabelStyles>{children}</LabelStyles>
             <QuantityStyles>{userStats}</QuantityStyles>
         </Box>

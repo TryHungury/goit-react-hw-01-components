@@ -12,6 +12,7 @@ padding: ${p=>p.theme.space[3]}px;
 border: ${p=>p.theme.borders.normal};
 background-color: ${p=>p.theme.colors.background};
 `
+
 const TdStyledExclusive = styled.td`
 text-align: center;
 color: ${p=>p.theme.colors.accent};
@@ -35,5 +36,3 @@ export const TransactionBody = ()=>{
         </Box>
     })
 }
-
-

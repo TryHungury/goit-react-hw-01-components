@@ -8,6 +8,5 @@ export const StatisticsList = () => {
         {data.map(({id, label, percentage}) => {
         return <StatisticsItem key={id} title={label} stats={percentage}></StatisticsItem>})}
     </Box>
-    ) 
-        
+    )    
 }
