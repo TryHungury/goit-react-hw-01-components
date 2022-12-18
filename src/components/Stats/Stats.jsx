@@ -33,6 +33,10 @@ export const Stats = ({userStats, children}) => {
             <LabelStyles>{children}</LabelStyles>
             <QuantityStyles>{userStats}</QuantityStyles>
         </Box>
-
+        default:
+            return <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="100%" backgroundColor="background"  border="normal" borderColor="borderColor" p="15px"  borderBottomLeftRadius="normal">
+            <LabelStyles>{children}</LabelStyles>
+            <QuantityStyles>{userStats}</QuantityStyles>
+        </Box>
     }
 }
